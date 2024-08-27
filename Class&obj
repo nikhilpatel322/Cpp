@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Define a class named 'Person'
+class Person {
+public:
+    // Data members
+    string name;
+    int age;
+
+    // Member function to introduce the person
+    void introduce() {
+        cout << "Hi, my name is " << name << " and I am " << age << " years old.\n";
+    }
+};
+
+int main() {
+    // Create an object of the 'Person' class
+    Person person1;
+    person1.name = "Nikhil Patel";
+    person1.age = 21;
+
+    // Call the member function to introduce the person
+    person1.introduce();
+
+    return 0;
+}
